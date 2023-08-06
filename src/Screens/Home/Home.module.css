@@ -1,0 +1,60 @@
+.parentcont{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 35%;
+}
+.heading{
+    color: black;
+    font-size: 2.5rem;
+    position: relative;
+    -webkit-text-stroke: 0.3vw ;
+    text-transform: uppercase;
+}
+.heading::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-text-stroke: 3px #00CCCC;
+    overflow: hidden;
+    animation: animate 5s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+@keyframes animate {
+    0%, 10%, 100% {
+        transform: scaleX(0);
+    }
+    70%, 90% {
+        transform: scaleX(1);
+    }
+}
+.para{
+    color: white;
+    width: 25rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.linkbtn{
+    text-decoration: none;
+    font-size: 1.5rem;
+    width:9rem;
+    height: 2.5rem;
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-left: 15rem;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 1rem;
+    border-radius: 10px;
+}
+.linkbtn:hover{
+    background-color: lightgray;
+}
