@@ -3,7 +3,7 @@
 
 # Deployment Link
  
- You can run this app on any devices by using this link - 
+ You can run this app on your PC by using this link - https://typing-master-two.vercel.app/
 
 # How To Run This App
 
